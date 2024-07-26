@@ -4,6 +4,9 @@
     padding: 0;
 }
 
+html {
+    font-size: 16px;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -47,13 +50,8 @@ nav ul li a {
     appearance: none;
     color: black;
     font-size: 1rem;
-    letter-spacing: .25px;
-    font-weight: 500;
-}
-
-.portada-container {
-    display: flex;
-    /* flex-wrap: wrap; */
+    letter-spacing: .5px;
+    /* font-weight: 500; */
 }
 
 .nosotros-container {
@@ -67,38 +65,9 @@ nav ul li a {
     margin: 1rem;
 }
 
-
-
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-
-
-
-
-
-
-
-.portada {
-    width: 100%;
-}
-
-
-
-
-
-
-
 /* ESTE ES EL CODIGO PARA HACER UNA PORTADA DE IMAGEN COMPLETA */
 .portada-container {
+    display: flex;
     position: relative;
     text-align: center;
     color: white;
@@ -114,20 +83,81 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5rem;
-    font-weight: 400;
+    font-weight: 700;
     margin: 0;
     color: white;
-    text-shadow: 1px 1px 5px black;
+    letter-spacing: 10px;
+    text-shadow: 0 0 4px black;
+    /* background-color: rgba(0, 0, 0, 0.329); */
+    border-radius: 5px;
+    padding: 0 20px;
   }
 
-.logo-portada {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4rem;
-    font-weight: 600;
-    margin: 0;
+.cards-container {
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.card {
+    /* border: 0.5px solid lightgrey; */
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 600px;
+    box-shadow: 0px 0px 4px lightgrey;
+    box-shadow: 0px 0px 2px grey;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+}
+
+.asesorate-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 224, 224);
+    padding: 50px;
+    font-size: 1.2rem;
+}
+
+.asesorate-container h1 {
+    font-size: 3rem;
+}
+
+.btn-contacto {
     color: white;
-    text-shadow: 0 0 5px black, 0 0 2px black;
-  }
+    background-color: black;
+    margin-top: 3rem;
+    padding: 10px 40px;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
