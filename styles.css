@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.main-color {
+    color: #af7839;
+}
+
 html {
     font-size: 16px;
 }
@@ -22,7 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 10%;
-    margin-bottom: 1px;
+    /* margin-bottom: 1px; */
     box-shadow: 0px 1px 4px 0px grey;
     -webkit-box-shadow: 0px 1px 4px 0px grey;
 }
@@ -58,12 +62,17 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    justify-content: center;
+    /* align-items: center; */
+    width: 50%;
+    /* margin: auto; */
+    margin:30px auto;
+    font-size: 1.2rem;
+    gap: 2rem;
+    text-align: justify;
 }
 
-.nosotros-texto {
-    font-size: 1.5rem;
-    margin: 1rem;
-}
+
 
 /* ESTE ES EL CODIGO PARA HACER UNA PORTADA DE IMAGEN COMPLETA */
 .portada-container {
@@ -79,7 +88,7 @@ nav ul li a {
 
 .texto-portada {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5rem;
@@ -87,7 +96,7 @@ nav ul li a {
     margin: 0;
     color: white;
     letter-spacing: 10px;
-    /* background-color: rgba(0, 0, 0, 0.329); */
+    background-color: rgba(0, 0, 0, 0.329);
     border-radius: 5px;
     padding: 0 20px;
   }
@@ -120,7 +129,9 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(160, 160, 160);
+    background-color: #af7839;
+    color: white;
     padding: 50px;
     font-size: 1.2rem;
 }
@@ -131,9 +142,10 @@ nav ul li a {
 
 .btn-contacto {
     color: white;
-    background-color: black;
+    /* background-color: lightgray; */
+    border: 1px solid whitesmoke;
     margin-top: 3rem;
-    padding: 10px 40px;
+    padding: 4px 20px;
     border-radius: 2rem;
     font-size: 1.2rem;
 }
@@ -143,9 +155,8 @@ nav ul li a {
 
 
 
-
 footer {
-    background-color: #333;
+    background-color: rgb(54, 54, 54);
     color: #fff;
     text-align: center;
     padding: 1rem;
