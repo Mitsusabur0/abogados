@@ -4,10 +4,19 @@
     padding: 0;
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
     appearance: none;
     color: black;
+}
+
+:root {
+    line-height: 1.5;
 }
 
 .main-color {
@@ -16,7 +25,9 @@ a {
 
 html {
     font-size: 16px;
+    margin:0;
 }
+
 
 body {
     font-family: Arial, sans-serif;
@@ -26,61 +37,42 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* Barra de navegación */
 header {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 10%;
-    /* margin-bottom: 1px; */
-    box-shadow: 0px 1px 4px 0px grey;
-    -webkit-box-shadow: 0px 1px 4px 0px grey;
+    border-bottom: 1px solid lightgrey;
 }
 
-.logo {
-    border-radius: 20px;
-    padding: 0 1rem;
-    font-size: 2.5rem;
-}
+    .logo {
+        border-radius: 20px;
+        padding: 0 1rem;
+        font-size: 2.5rem;
+    }
 
-.logo-img {
-    width: 25rem;
-}
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    gap: 40px;
-}
+    nav ul li a {
+        align-items: center;
+        text-decoration: none;
+        appearance: none;
+        color: black;
+        font-size: 0.9rem;
+        /* font-size: 1rem; */
+        letter-spacing: .5px;
+        /* font-weight: 500; */
+    }
 
-nav ul li a {
-    align-items: center;
-    text-decoration: none;
-    appearance: none;
-    color: black;
-    font-size: 1rem;
-    letter-spacing: .5px;
-    /* font-weight: 500; */
-}
-
-.nosotros-container {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    justify-content: center;
-    /* align-items: center; */
-    width: 50%;
-    /* margin: auto; */
-    margin:30px auto;
-    font-size: 1.2rem;
-    gap: 2rem;
-    text-align: justify;
-}
-
-
-
-/* ESTE ES EL CODIGO PARA HACER UNA PORTADA DE IMAGEN COMPLETA */
+/* Portada de imagen y texto en el centro */
 .portada-container {
     display: flex;
     position: relative;
@@ -88,8 +80,11 @@ nav ul li a {
     color: white;
 }
 
-.portada {
-    width: 100%;
+.img-portada {
+    width: 100vw;
+    /* margin-right: 100px; */
+    max-width: 100%;
+
 }
 
 .texto-portada {
@@ -101,11 +96,26 @@ nav ul li a {
     font-weight: 700;
     margin: 0;
     color: white;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
     background-color: rgba(0, 0, 0, 0.329);
     border-radius: 5px;
     padding: 0 20px;
-  }
+    width: max-content;
+    max-width: 60%;
+}
+/* FIN PORTADA DE IMAGEN COMPLETA */
+
+.nosotros-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    width: 50%;
+    margin:30px auto;
+    font-size: 1.2rem;
+    gap: 2rem;
+    text-align: justify;
+}
 
 .cards-container {
     padding: 5rem;
@@ -120,7 +130,7 @@ nav ul li a {
     border-radius: 10px;
     padding: 2rem;
     max-width: 600px;
-    box-shadow: 0px 0px 4px lightgrey;
+    /* box-shadow: 2px 2px 4px lightgrey; */
     box-shadow: 0px 0px 2px grey;
     text-align: justify;
     font-size: 1.2rem;
@@ -148,7 +158,6 @@ nav ul li a {
 
 .btn-contacto {
     color: white;
-    /* background-color: lightgray; */
     border: 1px solid whitesmoke;
     margin-top: 3rem;
     padding: 4px 20px;
@@ -162,12 +171,11 @@ nav ul li a {
 
 
 footer {
-    background-color: rgb(54, 54, 54);
-    color: #fff;
+    background-color: rgb(148, 148, 148);
+    color: white;
     text-align: center;
     padding: 1rem;
-    /* position: fixed; */
-    bottom: 0;
+    margin-bottom: 0px;
     width: 100%;
     display: flex;
     justify-content: center;
