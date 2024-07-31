@@ -104,8 +104,8 @@ header {
     letter-spacing: 8px;
     background-color: rgba(0, 0, 0, 0.329);
     /* text-shadow: 1px 1px 4px black; */
-    /* -webkit-text-stroke-width:0.5px; */
-    /* -webkit-text-stroke-color:grey; */
+    /* -webkit-text-stroke-width:1px; */
+    /* -webkit-text-stroke-color:black; */
     border-radius: 5px;
     padding: 0 20px;
     width: max-content;
@@ -128,6 +128,7 @@ header {
     font-size: 1.1rem;
     gap: 2rem;
     text-align: justify;
+    color: rgb(59, 59, 59);
 }
 
 .cards-container {
@@ -143,7 +144,6 @@ header {
     border-radius: 10px;
     padding: 1rem 2rem;
     max-width: 600px;
-    /* box-shadow: 2px 2px 4px lightgrey; */
     box-shadow: 0px 0px 2px rgba(128, 128, 128, 0.53);
     text-align: justify;
     font-size: 1rem;
@@ -184,8 +184,8 @@ header {
 
 
 footer {
-    background-color: rgb(148, 148, 148);
-    color: white;
+    background-color: rgb(49, 49, 49);
+    color: lightgray;
     text-align: center;
     padding: 1rem;
     margin-bottom: 0px;
