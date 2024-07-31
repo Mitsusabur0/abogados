@@ -37,7 +37,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Barra de navegación */
+/* Navbar */
 header {
     background-color: #fff;
     display: flex;
@@ -50,7 +50,7 @@ header {
     .logo {
         border-radius: 20px;
         padding: 0 1rem;
-        font-size: 2.5rem;
+        font-size: 2vw;
     }
 
     nav ul {
@@ -67,9 +67,20 @@ header {
         appearance: none;
         color: black;
         font-size: 0.9rem;
-        /* font-size: 1rem; */
         letter-spacing: .5px;
         /* font-weight: 500; */
+    }
+    @media (max-width: 500px) {
+        nav ul {
+            gap: 20px;
+        }
+        nav ul li a {
+            font-size: 0.5rem;
+        }
+    }
+    nav ul li a:hover {
+        /* color: grey; */
+        border-bottom: 1px solid grey;
     }
 
 /* Portada de imagen y texto en el centro */
@@ -78,6 +89,8 @@ header {
     position: relative;
     text-align: center;
     color: white;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-portada {
@@ -92,7 +105,7 @@ header {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5rem;
+    font-size: 4vw;
     font-weight: 700;
     margin: 0;
     color: white;
@@ -100,7 +113,7 @@ header {
     background-color: rgba(0, 0, 0, 0.329);
     border-radius: 5px;
     padding: 0 20px;
-    width: max-content;
+    width: fit-content;
     max-width: 60%;
 }
 /* FIN PORTADA DE IMAGEN COMPLETA */
