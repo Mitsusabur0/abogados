@@ -81,8 +81,8 @@ header {
         /* font-weight: 400; */
     }
     nav ul li a:hover {
-        color: #af7839;
-        border-bottom: 1px solid #af7839;
+        color: rgb(95, 95, 95);
+        border-bottom: 1px solid grey;
     }
 
 /* Portada de imagen y texto en el centro */
@@ -145,7 +145,7 @@ header {
     gap: 2rem;
     text-align: justify;
     /* color: rgb(59, 59, 59); */
-    margin-bottom: 100px;
+    margin-bottom: 2rem;
 }
 
 .cards-container {
