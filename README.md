@@ -26,15 +26,13 @@
     font size y columnas
 - estudio de mercado
 - maqueta nueva página web 
-- solo cuando sea admin podré saber si puedo hostear el nuevo sitio
-en el sistema actual
+- solo cuando sea admin podré saber si puedo hostear el nuevo sitio en el sistema actual
 
 # NATURALEZA DEL TRABAJO
 - Funcionaremos por pega específica?
 - Algo fijo? 
 - Qué se necesita
-- Mi propuesta inicial es asumir la administración del hosting y
-crear el sitio web desde cero
+- Mi propuesta inicial es asumir la administración del hosting y crear el sitio web desde cero
 - A esto se le puede sumar la migración a Workspace, si quieren
 - También puedo explorar otras opciones, si no están conformes con 
 el sistema actual
@@ -42,3 +40,12 @@ el sistema actual
 # PRECIO Y PAGOS, ETC
 - Considerar todo el pack (mail + sitio web)
 - Pagos a futuro?
+
+
+
+######################################
+
+administrar panel v2networks, crear nuevo mail
+probar migración a workspace con segundo dominio
+desarrollo web hasta octubre 1
+crear cuenta google en maps/reviews
