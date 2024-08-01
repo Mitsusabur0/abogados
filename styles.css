@@ -37,6 +37,11 @@ body {
     /* font-family: "Oswald"; */
 }
 
+.top-nav {
+    background-color: #af7839;
+    background-color: #a36f34;
+    height: 2rem;
+}
 /* Navbar ---------------------- */
 header {
     background-color: #fff;
@@ -49,7 +54,7 @@ header {
 }
 
     .logo {
-        border-radius: 20px;
+        /* border-radius: 20px; */
         padding: 0 1rem;
         font-size: 3rem;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -146,6 +151,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     gap: 100px;
+    /* background-color: #af78398f; */
 }
 
 .card {
@@ -154,7 +160,6 @@ header {
     padding: 1rem 2rem;
     max-width: 600px;
     box-shadow: 0px 0px 2px rgba(97, 97, 97, 0.733);
-    /* box-shadow: 0px 0px 2px rgb(97, 97, 97); */
     text-align: justify;
     font-size: 1.2rem;
 }
@@ -170,6 +175,8 @@ header {
     align-items: center;
     background-color: rgb(160, 160, 160);
     background-color: #af7839;
+    /* background-color: #af7839d3; */
+    /* background-color: #996a34ee; */
     color: white;
     padding: 50px;
     font-size: 1.2rem;
@@ -181,11 +188,15 @@ header {
 
 .btn-contacto {
     color: white;
-    border: 1px solid whitesmoke;
+    border: 1px solid white;
     margin-top: 3rem;
     padding: 4px 20px;
     border-radius: 2rem;
     font-size: 1.2rem;
+}
+.btn-contacto-hover:hover {
+    color:#af7839;
+    border-color:#af7839;
 }
 
 .text-link {
