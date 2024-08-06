@@ -7,7 +7,7 @@
 :root  {
     --main-color: #262626;
     --secondary-color: #EAE0CC;
-    /* --secondary-color: #C5C3C6; */
+    --secondary-color: #dfdfdf;
     --background-white: #f5f5f5;
     --text-color: #333333;
     line-height: 1.5;
@@ -125,7 +125,7 @@ header {
 .texto-portada-secundario {
     font-size: 4vw;
     letter-spacing: 2px;
-    background-color: rgba(0, 0, 0, 0.329);
+    background-color: rgba(0, 0, 0, 0.438);
     /* text-shadow: 1px 1px 4px black; */
     text-shadow: none;
 }
