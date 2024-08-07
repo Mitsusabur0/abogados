@@ -152,7 +152,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 .card {
     border: 0.5px solid rgba(0, 0, 0, 0.212);
@@ -175,30 +175,32 @@ header {
     justify-content: center;
     align-items: center;
     gap: 80px;
-    padding: 100px;
+    padding: 20px 300px 80px 300px;
 }
 .area-img {
-    width: 200px;
+    width: 300px;
     height: auto;
-    border-radius: 200px;
+    /* border-radius: 200px; */
     filter:grayscale(50%)
 }
 .area-card {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* align-items: flex-start; */
+    align-items: flex-start;
     gap: 70px;
     /* width: 40% */
-    /* border: 1px solid black; */
+    border: 1px solid rgb(143, 143, 143);
+    /* border-radius: 5px; */
 
 }
 .area-card-text {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 500px;
     gap: 1rem;
     text-align: justify;
+    padding: 20px 20px 0 0;
 }
 
 .asesorate-container {
@@ -250,6 +252,7 @@ header {
 footer {
     background-color: rgb(49, 49, 49);
     background-color: var(--main-color);
+    background-color: var(--text-color);
     color: lightgray;
     text-align: center;
     padding: 1rem;
