@@ -6,8 +6,10 @@
 
 :root  {
     --main-color: #262626;
-    --secondary-color: #EAE0CC;
+    /* --main-color: rgb(153, 119, 52); */
+    /* --secondary-color: #EAE0CC; */
     --secondary-color: #dfdfdf;
+    /* --secondary-color: rgb(153, 119, 52); */
     --background-white: #f5f5f5;
     --text-color: #333333;
     line-height: 1.5;
@@ -150,17 +152,15 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 100px;
+    gap: 1rem;
 }
 .card {
     border: 0.5px solid rgba(0, 0, 0, 0.212);
     border-radius: 10px;
     padding: 1rem 2rem;
     max-width: 600px;
-    /* box-shadow: 0px 0px 2px rgba(97, 97, 97, 0.733); */
     text-align: justify;
-    font-size: 1.2rem;
-    /* background-color: white; */
+    font-size: 1.1rem;
 
 }
 .card h2 {
@@ -170,7 +170,8 @@ header {
 /* Carrds for Areas de práctica */
 .areas-container {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 80px;
@@ -186,14 +187,18 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* align-items: flex-start; */
     gap: 70px;
-    /* width: 20%; */
+    /* width: 40% */
+    /* border: 1px solid black; */
+
 }
 .area-card-text {
     display: flex;
     flex-direction: column;
     width: 400px;
     gap: 1rem;
+    text-align: justify;
 }
 
 .asesorate-container {
