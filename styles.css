@@ -5,13 +5,10 @@
 }
 
 :root  {
-    --main-color: #262626;
-    --main-color: rgb(192, 147, 57);
-    --secondary-color: #EAE0CC;
-    --secondary-color: #dfdfdf;
-    --secondary-color: rgb(192, 147, 57);
+    --main-color: #ad762f;
+    --secondary-color-dark: #303030;
     --background-white: #f5f5f5;
-    --text-color: #333333;
+    --text-color: #252525;
     line-height: 1.5;
 }
 
@@ -127,7 +124,7 @@ header {
 .texto-portada-secundario {
     font-size: 4vw;
     letter-spacing: 2px;
-    background-color: rgba(0, 0, 0, 0.438);
+    background-color: rgba(0, 0, 0, 0.507);
     /* text-shadow: 1px 1px 4px black; */
     text-shadow: none;
 }
@@ -203,23 +200,19 @@ header {
     padding: 20px 20px 0 0;
 }
 
+
+/* Asesórate con nosotros */
 .asesorate-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: rgb(160, 160, 160); */
     background-color: var(--main-color);
-    background-color: var(--secondary-color);
-    color: white;
-    color: black;
-    padding: 80px 50px;
+    color: whitesmoke;
+    padding: 30px 50px;
     font-size: 1.2rem;
 }
 
-.asesorate-container h1 {
-    font-size: 3.5rem;
-}
 
 /* Botón de Asesórate con nosotros */
 .btn-contacto {
@@ -227,19 +220,19 @@ header {
     padding: 8px 36px;
     border-radius: 2rem;
     font-size: 1.2rem;
-    /* color: grey; */
-    /* background-color: var(--main-color); */
-    border: 1px solid grey;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
 }
 
 .btn-contacto:hover {
     color: black;
-    border-color: var(--main-color);
+    border-color: black;
+    /* background-color: whitesmoke; */
 }
 
 
 .text-link {
-    color: grey; 
+    color: var(--main-color); 
     font-weight: 700; 
     text-decoration: none;
     font-size: 1.3rem;
@@ -250,16 +243,15 @@ header {
 
 
 footer {
-    background-color: rgb(49, 49, 49);
-    background-color: var(--main-color);
-    background-color: var(--text-color);
+    background-color: var(--secondary-color-dark);
     color: lightgray;
-    text-align: center;
-    padding: 1rem;
+    /* text-align: center; */
+    padding: 1rem 10%;
     margin-bottom: 0px;
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 
