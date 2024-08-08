@@ -110,16 +110,16 @@ body {
     z-index: 1; /* Ensure portada is below navbar */
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1040px) {
     .nav-menu {
       position: fixed;
       left: -100%;
-      top: 5rem;
+      top: 7rem;
       flex-direction: column;
       background-color: var(--background-white);
       width: 100%;
       text-align: center;
-      transition: 0.3s;
+      transition: 0.6s;
       box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
       z-index: 999; /* Ensure menu is above portada but below navbar */
     }
@@ -133,11 +133,13 @@ body {
     }
   
     .nav-menu ul li {
-      margin: 2.5rem 0;
+      margin: 1rem 0;
+      height: 5vh;
     }
   
     .hamburger {
       display: block;
+      z-index: 1001;
     }
   }
 
