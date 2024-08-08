@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipo - Abarca Zañartu Abogados</title>
     <link rel="stylesheet" href="../styles.css">
+    <script src="../scripts.js"></script>
     <link rel="icon" href="../images/favicon.ico">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:wght@400..900&display=swap');
@@ -14,15 +15,13 @@
 <body>
     <div class="top-nav"></div>
 
-    <header>
+    <!-- <header>
         <a class="logo-container" href="../index.html">
             <img src="../images/logo.png" alt="logo" class="img-logo">
         </a>
-
         <nav>
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
-                <!-- <li><a href="../index2.html">INICIO 2</a></li> -->
                 <li><a href="nuestro_estudio.html">NUESTRO ESTUDIO</a></li>
                 <li><a href="areas.html">ÁREAS DE PRÁCTICA</a></li>
                 <li><a href="arbitraje_particion.html">ARBITRAJE Y PARTICIÓN</a></li>
@@ -30,20 +29,80 @@
                 <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
 
 
 
-
-
+    <div class="navbar">
+        <a href="../index.html" class="logo-container">
+            <img src="../images/logo.png" alt="logo" class="img-logo">
+        </a>
+        
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+      
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="nuestro_estudio.html">NUESTRO ESTUDIO</a></li>
+                <li><a href="areas.html">ÁREAS DE PRÁCTICA</a></li>
+                <li><a href="arbitraje_particion.html">ARBITRAJE Y PARTICIÓN</a></li>
+                <li><a href="equipo.html">EQUIPO</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
 
 
 
 
     <main>
-        <div class="nosotros-container">
-            <h1>Equipo</h1>
+        <div class="portada-container">
+            <img src="../images/equipo.JPG" alt="portada" class="img-portada">
+            <h1 class="texto-portada texto-portada-secundario">Nuestro equipo</h1>
         </div>
+
+        <div class="equipo-container">
+            <div class="equipo-card">
+                <a href="https://www.linkedin.com/in/jose-antonio-abarca-193173304/?originalSubdomain=cl" target="_blank"><img class="equipo-card-img" src="../images/jose.jpg" alt="José Antonio Abarca"></a>
+                <h3>José Antonio Abarca</h3>
+                <p>Socio Fundador</p>
+                <p class="main-color">jabarca@abarcazanartu.cl</p>
+            </div>
+            <div class="equipo-card">
+                <a href="https://www.linkedin.com/in/beltr%C3%A1n-francisco-za%C3%B1artu-urbina-445731140/?originalSubdomain=cl" target="_blank"><img class="equipo-card-img" src="../images/bel.jpg" alt="Beltrán Zañartu Urbina"></a>
+                <h3>Beltrán Zañartu Urbina</h3>
+                <p>Socio Fundador</p>
+                <p class="main-color">bzanartu@abarcazanartu.cl</p>
+            </div>
+            <div class="equipo-card">
+                <a href="https://www.linkedin.com/in/bianca-barrueto-zamora-985484ab/?originalSubdomain=cl" target="_blank"><img class="equipo-card-img" src="../images/bianca.jpg" alt="Bianca Barrueto Zamora"></a>
+                <h3>Bianca Barrueto Zamora</h3>
+                <p>Asociada</p>
+                <p class="main-color">bbarrueto@abarcazanartu.cl</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- ASESÓRATE CON NOSOTROS -->
         <div class="asesorate-container">

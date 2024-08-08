@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abarca Zañartu Abogados</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="../scripts.js"></script>
     <link rel="icon" href="./images/favicon.ico">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:wght@400..900&display=swap');
@@ -16,15 +17,20 @@
 <body>
     <div class="top-nav"></div>
 
-    <header>
-        <a class="logo-container" href="index.html">
-            <img src="./images/logo.png" alt="logo" class="img-logo">
+    <div class="navbar">
+        <a href="../index.html" class="logo-container">
+            <img src="../images/logo.png" alt="logo" class="img-logo">
         </a>
-
-        <nav>
+        
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+      
+        <nav class="nav-menu" id="nav-menu">
             <ul>
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="./index-test.html">INICIO test</a></li>
+                <li><a href="index.html">INICIO</a></li>
                 <li><a href="./templates/nuestro_estudio.html">NUESTRO ESTUDIO</a></li>
                 <li><a href="./templates/areas.html">ÁREAS DE PRÁCTICA</a></li>
                 <li><a href="./templates/arbitraje_particion.html">ARBITRAJE Y PARTICIÓN</a></li>
@@ -32,7 +38,7 @@
                 <li><a href="./templates/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
 
 
     <main>
