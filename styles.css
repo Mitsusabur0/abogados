@@ -43,7 +43,7 @@ body {
 
 .top-nav {
     background-color: var(--main-color);
-    height: 1rem;
+    height: 25px;
 }
 
 /* Navbar ---------------------- */
@@ -341,6 +341,9 @@ body {
 
 .main-color {
     color: var(--main-color)
+}
+.main-color-bg {
+    background-color: var(--main-color)
 }
 
 
