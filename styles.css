@@ -207,7 +207,7 @@ body {
     flex-direction: column;
     padding: 2rem 0;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 55%;
     margin:30px auto;
     font-size: 1.1rem;
@@ -363,7 +363,11 @@ body {
   }
 }
 
-.equipo-card a {
+/* .equipo-card a {
+    width: inherit;
+    border-radius: inherit;
+} */
+.abogado-img {
     width: inherit;
     border-radius: inherit;
 }
@@ -373,6 +377,17 @@ body {
     width: inherit;
     padding: 0 1px;
     border-radius: inherit;
+}
+
+.linkedin-text-link {
+  color: #0A66C2;
+  height: 1.2rem;
+  margin: auto;
+}
+
+.linkedin-img {
+  width: fit-content;
+  margin-top: 10px;
 }
 
 .main-color {
