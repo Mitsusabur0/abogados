@@ -61,7 +61,6 @@ body {
   
   .logo-container {
     width: 300px;
-    margin-right: 40px;
   }
   
   .img-logo {
@@ -303,6 +302,7 @@ body {
     color: whitesmoke;
     padding: 30px 50px;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 
