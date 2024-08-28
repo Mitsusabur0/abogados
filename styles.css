@@ -265,9 +265,10 @@ body {
     align-items: center;
     gap: 80px;
     padding: 20px 300px 80px 300px;
+    /* padding: 20px 10vw 80px 10vw; */
 }
 .area-img {
-    width: 300px;
+    width: 80px;
     height: auto;
     /* border-radius: 200px; */
     filter:grayscale(50%)
@@ -276,7 +277,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     gap: 70px;
 }
 .area-card h3 {
@@ -289,6 +290,12 @@ body {
     gap: 1rem;
     text-align: justify;
     padding: 20px 20px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .area-card-text {
+    width: 300px;
+  }
 }
 
 
