@@ -207,7 +207,8 @@ body {
     padding: 2rem 0;
     justify-content: center;
     align-items: flex-start;
-    width: 55%;
+    /* width: 55%; */
+    width: 50vw;
     margin:30px auto;
     font-size: 1.1rem;
     gap: 2rem;
@@ -440,9 +441,10 @@ body {
 }
 
 .map {
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-shadow: 0 0 4px grey;
   margin-bottom: 40px;
+  max-width: 90vw;
 }
 
 
