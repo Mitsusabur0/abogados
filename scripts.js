@@ -37,3 +37,78 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }, { passive: false });
 });
+
+
+
+
+// FORM VALIDATION
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contactForm');
+  const successMessage = document.getElementById('successMessage');
+  const errorMessage = document.getElementById('errorMessage');
+
+  form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      if (validateForm()) {
+          submitForm();
+      }
+  });
+
+  function validateForm() {
+      const nombre = document.getElementById('nombre').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const nombreEmpresa = document.getElementById('nombre_empresa').value.trim();
+      const informacion = document.getElementById('informacion').value.trim();
+
+      if (nombre === '' || email === '' || nombreEmpresa === '' || informacion === '') {
+          showError('Por favor, complete todos los campos.');
+          return false;
+      }
+
+      if (!isValidEmail(email)) {
+          showError('Por favor, ingrese un email válido.');
+          return false;
+      }
+
+      return true;
+  }
+
+  function isValidEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+  }
+
+  function submitForm() {
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+          method: 'POST',
+          body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+          if (data.success) {
+              showSuccess();
+              form.reset();
+          } else {
+              showError('Ha ocurrido un error. Por favor, inténtelo de nuevo más tarde.');
+          }
+      })
+      .catch(error => {
+          console.error('Error:', error);
+          showError('Ha ocurrido un error. Por favor, inténtelo de nuevo más tarde.');
+      });
+  }
+
+  function showSuccess() {
+      successMessage.style.display = 'block';
+      errorMessage.style.display = 'none';
+  }
+
+  function showError(message) {
+      errorMessage.textContent = message;
+      errorMessage.style.display = 'block';
+      successMessage.style.display = 'none';
+  }
+});
