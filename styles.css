@@ -79,7 +79,7 @@ body {
   }
   
   .nav-menu ul li {
-    margin-left: 1rem;
+    margin-left: 1.4rem;
   }
   
   .nav-menu ul li a {
@@ -494,6 +494,7 @@ footer {
   max-width: 800px;
   margin: 50px auto;
   padding: 0 20px;
+  text-align: justify;
 }
 
 .estudio-container p {
@@ -609,6 +610,7 @@ footer {
   max-width: 1200px;
   margin: 4rem auto;
   padding: 0 20px;
+  gap: 2rem;
 }
 
 .featured-item {
@@ -1164,8 +1166,9 @@ footer {
 }
 
 .area-card-text {
-  padding: 20px ;
+  padding: 20px 30px;
 }
+
 
 .area-card h3 {
   color: var(--main-color);
@@ -1190,7 +1193,6 @@ footer {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
-  /* padding-top: 20px; */
 }
 
 .text-link:hover {
