@@ -259,14 +259,12 @@ body {
 
 /* Carrds for Areas de práctica */
 .areas-container {
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    padding: 20px 300px 80px 300px;
-    /* padding: 20px 10vw 80px 10vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 20px 5% 80px 5%;
 }
 .area-img {
     width: 80px;
@@ -449,12 +447,6 @@ body {
 
 
 
-
-
-
-
-
-
 footer {
     background-color: var(--secondary-color-dark);
     color: lightgray;
@@ -469,3 +461,224 @@ footer {
 
 
 
+/* Nuevo código para la página áreas */
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  /* padding: 20px; */
+  /* background-color: #f5f5f5; */
+}
+
+.nosotros-container {
+  /* background-color: #fff; */
+  padding: 30px;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.areas-container {
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.area-card {
+  /* background-color: #fff; */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+}
+
+.area-card:hover {
+  transform: translateY(-5px);
+}
+
+.area-card-text {
+  padding: 20px;
+  text-align: justify ;
+}
+
+h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.text-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.text-link:hover {
+  color: #2980b9;
+}
+
+@media screen and (max-width: 768px) {
+  .area-card {
+      width: 90%;
+  }
+  .area-card-text {
+      width: 100%;
+      padding: 20px;
+  }
+}
+
+
+
+
+
+/* Arbitraje y Partición page styles */
+.arbitraje-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: justify;
+}
+
+.arbitraje-container h1 {
+  color: var(--main-color);
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.arbitraje-container p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.arbitraje-container strong {
+  color: var(--main-color);
+}
+
+.arbitraje-highlight {
+  background-color: #f0f0f0;
+  border-left: 4px solid var(--main-color);
+  padding: 20px;
+  margin: 30px 0;
+}
+
+.arbitraje-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.arbitraje-cta a {
+  display: inline-block;
+  background-color: var(--main-color);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.arbitraje-cta a:hover {
+  background-color: #8d5f25;
+}
+
+@media screen and (max-width: 768px) {
+  .arbitraje-container h1 {
+      font-size: 2rem;
+  }
+}
+
+
+
+/* Nuestro Estudio page styles */
+.estudio-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.estudio-container p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.estudio-container strong {
+  color: var(--main-color);
+}
+
+.estudio-highlight {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--main-color);
+  text-align: center;
+  margin: 40px 0;
+  padding: 20px;
+  border-top: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+}
+
+.estudio-timeline {
+  position: relative;
+  padding-left: 30px;
+  margin: 40px 0;
+}
+
+.estudio-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--main-color);
+}
+
+.estudio-timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.estudio-timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -34px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+
+@media screen and (max-width: 768px) {
+  .estudio-container p {
+      font-size: 1rem;
+  }
+  .estudio-highlight {
+      font-size: 1.1rem;
+  }
+}
