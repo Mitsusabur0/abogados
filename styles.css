@@ -9,6 +9,9 @@
     --secondary-color-dark: #303030;
     --background-white: #f5f5f5;
     --text-color: #252525;
+    --secondary-color: #66717E;
+    --secondary-color: #587B7F;
+    --secondary-color: #251605;
     line-height: 1.5;
 }
 
@@ -330,7 +333,7 @@ body {
 
 
 .text-link {
-    color: var(--main-color); 
+    color: var(--secondary-color-dark); 
     color: grey;
     font-weight: 700; 
     text-decoration: none;
@@ -386,7 +389,7 @@ body {
 }
 
 .linkedin-text-link {
-  color: #0A66C2;
+  color: var(--secondary-color-dark);
   height: 1.2rem;
   margin: auto;
 }
@@ -483,7 +486,7 @@ body {
 
 h2 {
   color: #2c3e50;
-  border-bottom: 2px solid #3498db;
+  border-bottom: 2px solid lightgrey;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
@@ -532,7 +535,7 @@ li {
 }
 
 .text-link {
-  color: #3498db;
+  color: var(--secondary-color-dark);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -734,7 +737,7 @@ li {
 }
 
 .featured-item {
-  flex-basis: calc(50% - 20px);
+  flex-basis: calc(50% - 40px);
   margin-bottom: 2rem;
 }
 
@@ -751,7 +754,7 @@ li {
 }
 
 .featured-link {
-  color: var(--main-color);
+  color: var(--secondary-color-dark);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -772,5 +775,71 @@ li {
   
   .featured-item {
       flex-basis: 100%;
+  }
+}
+
+
+
+/* Código para "Asesórate con nosotros" */
+.asesorate-container {
+  background-color: var(--main-color);
+  /* background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.asesorate-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.asesorate-container h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.asesorate-container p {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-contacto {
+  display: inline-block;
+  background-color: white;
+  color: var(--main-color);
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-contacto:hover {
+  background-color: var(--secondary-color-dark);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .asesorate-container h2 {
+      font-size: 2rem;
+  }
+
+  .asesorate-container p {
+      font-size: 1rem;
+  }
+
+  .btn-contacto {
+      font-size: 1rem;
+      padding: 10px 24px;
   }
 }
