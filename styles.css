@@ -6,12 +6,10 @@
 
 :root  {
     --main-color: #ad762f;
-    /* --main-color: blue; */
+    --main-color: #c78a3b;
     --secondary-color-dark: #303030;
     --background-white: #f5f5f5;
     --text-color: #252525;
-    --secondary-color: #66717E;
-    --secondary-color: #587B7F;
     --secondary-color: #251605;
     line-height: 1.5;
 }
