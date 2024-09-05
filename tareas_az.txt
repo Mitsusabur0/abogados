@@ -1,0 +1,18 @@
+Tareas semana 2-8 septiembre:
+1.	Cambiar textos página web
+a.	Ver word
+b.	Agrandar títulos de cada área en áreas de práctica
+c.	bajar nuestra especialidad fuera de la linea de tiempo
+2.	Cambiar formulario a página arbitraje
+a.	Campos:
+i.	Nombre
+ii.	Email de contacto
+iii.	Teléfono de contacto
+iv.	Motivo de consulta
+3.	Borrar página ley Karin
+4.	Subir sitio web
+
+
+Tareas semana 9-15
+1.	Implementar cuadros de información de cada abogado
+
