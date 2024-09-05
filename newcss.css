@@ -486,6 +486,7 @@ a {
 
 .modal-contact-info a {
   color: var(--main-color);
+  color: #0077B5;
   text-decoration: none;
   font-weight: bold;
 }
@@ -516,7 +517,7 @@ a {
     }
   
     .modal-header-text p {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   }
 
