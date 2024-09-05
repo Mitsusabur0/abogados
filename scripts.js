@@ -143,7 +143,7 @@ const teamData = {
     name: "Bianca Barrueto Zamora",
     position: "Asociada",
     email: "bbarrueto@abarcazanartu.cl",
-    phone: "+56 9 XXXX XXXX",
+    phone: "+56 9 6247 3575",
     linkedin: "https://www.linkedin.com/in/bianca-barrueto-zamora-985484ab/",
     description: "",
     image: "../images/bianca.jpeg"

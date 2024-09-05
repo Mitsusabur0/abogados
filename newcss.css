@@ -356,6 +356,13 @@ a {
     .area-card {
         width: 100%;
     }
+    .area-card h3 {
+     font-size: 1.1rem;
+    }
+
+    .text-link {
+        font-size: 1.1rem;
+    }
 }
 
 
@@ -511,6 +518,7 @@ a {
   
   .modal-contact-info {
     padding-top: 20px;
+    
   }
   
   .modal-contact-info p {
@@ -556,6 +564,14 @@ a {
 
     #modal-description  {
         font-size: 1rem;
+    }
+
+    .modal-contact-info p {
+        font-size: 1rem;
+    }
+
+    .team-container {
+        width: 80vw;
     }
   }
 
@@ -626,8 +642,14 @@ a {
     }
 
     .team-card {
-        height: 350px;
+        height: 300px;
     }
+
+    .team-img {
+        width: 150px;
+        height: 150px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1079,7 +1101,7 @@ a {
     }
 
     .featured-content h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .estudio-container p {
