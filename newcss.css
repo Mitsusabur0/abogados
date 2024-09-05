@@ -11,12 +11,10 @@
     /* --main-color: #254441; */
     /* --main-color: #073B3A; */
     /* --main-color: #023047; */
-    
-    
     --main-color: #c78a3b;
 
     --secondary-color: #808080;
-    --secondary-color: #a1a1a1;
+    /* --secondary-color: #a1a1a1; */
 
     --secondary-color-dark: #303030;
     --background-white: #f5f5f5;
@@ -173,6 +171,11 @@ a {
         /* font-size: 4vw; */
         background-color: rgba(0, 0, 0, 0.507);
         margin: 0 40px;
+    }
+
+    .img-portada {
+        height: 40vh;
+        width: 100vw;
     }
 
     .logo-container {
@@ -387,6 +390,7 @@ a {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
+    font-weight: 500;
 }
 
 .team-intro p {
@@ -962,6 +966,7 @@ a {
     border-bottom: 1px solid var(--main-color);
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 2rem;
+    font-weight: 500;
 }
 
 .arbitraje-container p {
@@ -1037,7 +1042,6 @@ a {
 }
 
 
-
 .featured-content {
     display: flex;
     flex-wrap: wrap;
@@ -1070,9 +1074,11 @@ a {
 
 .featured-link {
     color: var(--secondary-color-dark);
+    color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+    font-size: 1.1rem;
 }
 
 .featured-link:hover {

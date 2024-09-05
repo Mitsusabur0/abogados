@@ -6,8 +6,7 @@
     <title>Arbitraje y partición - Abarca Zañartu Abogados</title>
     <!-- <link rel="stylesheet" href="../styles.css"> -->
     <link rel="stylesheet" href="../newcss.css">
-
-    <script src="../scripts.js"></script>
+    <script src="../scripts.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="../images/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../images/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/icons/favicon-16x16.png">
@@ -68,6 +67,33 @@
             </div> -->
         </div>
 
+        <!-- FORMULARIO -->
+        <div class="contact-form-container">
+            <h1>Contáctanos con tu caso</h1>
+            <p>Envíanos tus datos y te contactaremos dentro de 48 horas.</p><br>
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="2d01bf10-0e19-42e6-a691-ac7f01bca3d9">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email de contacto:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="informacion">Información adicional:</label>
+                    <textarea id="informacion" name="informacion" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+            <div id="successMessage" class="message success" style="display: none;">
+                ¡Gracias por contactarnos! Nos pondremos en contacto pronto.
+            </div>
+            <div id="errorMessage" class="message error" style="display: none;">
+                Ha ocurrido un error. Por favor, inténtelo de nuevo más tarde.
+            </div>
+        </div>
 
         <!-- ASESÓRATE CON NOSOTROS -->
         <section class="asesorate-container">
