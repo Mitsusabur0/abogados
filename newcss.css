@@ -346,6 +346,7 @@ a {
     .areas-container {
         grid-template-columns: 1fr;
         width: 90%;
+        font-size: 1rem;
     }
 
     .arbitraje {
@@ -637,6 +638,10 @@ a {
     .team-card h3 {
         font-size: 1.3rem;
     }
+
+    .team-intro p {
+        font-size: 1rem;
+    }
 }
 
 
@@ -845,6 +850,7 @@ a {
     line-height: 1.8;
     font-size: 1.1rem;
 }
+
 .estudio-timeline p strong {
     color: var(--text-color);
     color: var(--main-color);
@@ -976,6 +982,11 @@ a {
     .arbitraje-container h1 {
         font-size: 1.5rem;
     }
+    .arbitraje-container p {
+        font-size: 1rem;
+    }
+
+    
 }
 
 
@@ -1069,6 +1080,14 @@ a {
 
     .featured-content h2 {
         font-size: 1.5rem;
+    }
+
+    .estudio-container p {
+        font-size: 1rem;
+    }
+
+    .featured-item p {
+        font-size: 1rem;
     }
 }
 
