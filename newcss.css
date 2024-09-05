@@ -339,7 +339,7 @@ a {
 }
 
 .text-link:hover {
-    color: black;
+    color: var(--main-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -363,7 +363,7 @@ a {
 /* Team Section Styles */
 .team-container {
     max-width: 1200px;
-    margin: 60px auto;
+    margin: 4rem auto;
     padding: 0 20px;
 }
 
@@ -375,9 +375,10 @@ a {
 .team-intro h2 {
     /* color: var(--main-color); */
     border-bottom: 1px solid var(--main-color);
+    border-bottom: 1px solid #e0e0e0;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
 .team-intro p {
@@ -410,6 +411,7 @@ a {
 .team-card:hover {
     transform: translateY(-5px);
 }
+
 
 
 /* Code to display a window when the cards are clicked */
@@ -544,11 +546,15 @@ a {
     }
   
     .modal-header-text h2 {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
     }
   
     .modal-header-text p {
       font-size: 1rem;
+    }
+
+    #modal-description  {
+        font-size: 1rem;
     }
   }
 
@@ -620,6 +626,16 @@ a {
 
     .team-card {
         height: 350px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .team-intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .team-card h3 {
+        font-size: 1.3rem;
     }
 }
 
@@ -710,7 +726,7 @@ a {
 
 /* Contact Page Styles */
 .contact-page-container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 40px 20px;
 }
@@ -718,13 +734,12 @@ a {
 .contact-info-container {
     background-color: var(--background-white);
     border-radius: 8px;
-    padding: 30px;
+    padding: 30px  0;
     margin-bottom: 40px;
 }
 
 .map-container {
     background-color: var(--background-white);
-    /* border-radius: 8px; */
     /* padding: 30px; */
     margin-bottom: 40px;
     text-align: center;
@@ -733,15 +748,18 @@ a {
 .map {
     width: 100%;
     height: 450px;
+    box-shadow: 0 0 4px grey;
+    border-radius: 8px;
 }
 
 .contact-info-container h2, .map-container h2 {
-    color: var(--main-color);
+    /* color: var(--main-color); */
     font-size: 2rem;
     margin-bottom: 40px;
     text-align: center;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--main-color);
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .contact-cards-container {
@@ -804,6 +822,13 @@ a {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .contact-info-container h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
 
 
 
@@ -822,11 +847,12 @@ a {
 }
 .estudio-timeline p strong {
     color: var(--text-color);
+    color: var(--main-color);
 }
 
-/* .estudio-container strong {
+.estudio-container strong {
     color: var(--main-color);
-} */
+}
 
 .estudio-highlight {
     font-size: 1.3rem;
@@ -903,9 +929,10 @@ a {
     color: var(--main-color);
     color: var(--text-color);
     font-size: 2.5rem;
-    margin: 60px 0 2rem 0;
+    margin: 4rem 0 2rem 0;
     text-align: center;
     border-bottom: 1px solid var(--main-color);
+    border-bottom: 1px solid #e0e0e0;
     padding-bottom: 2rem;
 }
 
@@ -998,6 +1025,7 @@ a {
     color: var(--main-color);
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
     border-bottom: 1px solid #e0e0e0;
 }
 
@@ -1037,6 +1065,10 @@ a {
         font-size: 8vw; /* Even larger for very small screens */
         letter-spacing: 0.2vw; /* Further reduced letter spacing */
         white-space: normal; /* Allows wrapping on very small screens */
+    }
+
+    .featured-content h2 {
+        font-size: 1.5rem;
     }
 }
 
