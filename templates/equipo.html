@@ -6,7 +6,7 @@
     <title>Equipo - Abarca Zañartu Abogados</title>
     <!-- <link rel="stylesheet" href="../styles.css"> -->
     <link rel="stylesheet" href="../newcss.css">
-    <script src="../scripts.js"></script>
+    <script src="../scripts.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="../images/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../images/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/icons/favicon-16x16.png">
@@ -57,7 +57,7 @@
                 <p>En Abarca Zañartu, contamos con un equipo de abogados altamente calificados y comprometidos con la excelencia en el servicio legal.</p>
             </div>
     
-            <div class="team-grid">
+            <!-- <div class="team-grid">
                 <div class="team-card">
                     <div class="team-card-inner">
                         <div class="team-card-front">
@@ -111,7 +111,48 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+            <div class="team-grid">
+                <div class="team-card" data-member="jose">
+                  <img src="../images/jose.jpg" alt="José Antonio Abarca" class="team-img">
+                  <h3>José Antonio Abarca</h3>
+                  <p>Socio Fundador</p>
+                </div>
+                <div class="team-card" data-member="beltran">
+                  <img src="../images/bel.jpg" alt="Beltrán Zañartu Urbina" class="team-img">
+                  <h3>Beltrán Zañartu Urbina</h3>
+                  <p>Socio</p>
+                </div>
+                <div class="team-card" data-member="bianca">
+                  <img src="../images/bianca.jpeg" alt="Bianca Barrueto Zamora" class="team-img">
+                  <h3>Bianca Barrueto Zamora</h3>
+                  <p>Asociada</p>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div id="team-modal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div class="modal-header">
+                    <img id="modal-image" src="" alt="" class="modal-img">
+                    <div class="modal-header-text">
+                      <h2 id="modal-name"></h2>
+                      <p id="modal-position"></p>
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                    <p id="modal-description"></p>
+                    <div class="modal-contact-info">
+                      <p><strong>Teléfono:</strong> <span id="modal-phone"></span></p>
+                      <p><strong>Email:</strong> <span id="modal-email"></span></p>
+                      <p><a id="modal-linkedin" target="_blank">LinkedIn</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
         </section>
     
         <!-- ASESÓRATE CON NOSOTROS -->
@@ -151,6 +192,9 @@
           </div>
         </div>
       </footer>
+
 </body>
+
+
 </html>
 

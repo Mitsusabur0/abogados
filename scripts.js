@@ -112,3 +112,76 @@ document.addEventListener('DOMContentLoaded', function() {
       successMessage.style.display = 'none';
   }
 });
+
+
+
+// JS to show lawyers new window on click
+const modal = document.getElementById("team-modal");
+const cards = document.querySelectorAll(".team-card");
+const closeBtn = document.querySelector(".close");
+
+const teamData = {
+  jose: {
+    name: "José Antonio Abarca",
+    position: "Socio Fundador",
+    email: "jabarca@abarcazanartu.cl",
+    phone: "+56 9 6657 8170",
+    linkedin: "https://www.linkedin.com/in/josé-antonio-abarca-193173304/",
+    description: "Abogado Universidad Diego Portales (1997) Abogado, con más de 25 años de ejercicio libre de la profesión. En el ámbito privado, socio fundador de Estudio Jurídico Abarca & Abogados, que se transformó a Abarca Zañartu Abogados desde 2022. Estudio que asesora a empresas de diversos ámbitos de carácter civil. Funcionario Juzgado de Policía Local de Recoleta (1°) y Pudahuel (1°) desde 1998 a 2006.- Desempeñándose, además, como Juez Arbitro, desde el periodo 2017 a la fecha, nombrado por la Ilustrísima Corte de Apelaciones de Santiago. Mediador Familiar.",
+    image: "../images/jose.jpg"
+  },
+  beltran: {
+    name: "Beltrán Zañartu Urbina",
+    position: "Socio",
+    email: "bzanartu@abarcazanartu.cl",
+    phone: "+56 9 9221 4351",
+    linkedin: "https://www.linkedin.com/in/beltrán-francisco-zañartu-urbina-445731140/",
+    description: "Abogado Universidad de Chile (2016). Especialista en Derecho Ambiental. Beltrán comenzó su carrera en la Superintendencia de Servicios Sanitarios, para luego desempeñarse en los estudios jurídicos VGC Abogados y Eelaw Medio Ambiente y Energía. Forma parte del equipo de Abarca Zañartu Abogados desde marzo del 2022, estableciéndose como socio en junio de 2023. Beltrán es también Mediador Familiar de la Universidad Diego Portales y director de la Fundación Redes en Cajas.",
+    image: "../images/bel.jpg"
+  },
+  bianca: {
+    name: "Bianca Barrueto Zamora",
+    position: "Asociada",
+    email: "bbarrueto@abarcazanartu.cl",
+    phone: "+56 9 XXXX XXXX",
+    linkedin: "https://www.linkedin.com/in/bianca-barrueto-zamora-985484ab/",
+    description: "",
+    image: "../images/bianca.jpeg"
+  }
+};
+
+cards.forEach(card => {
+  card.addEventListener("click", () => {
+    const member = card.dataset.member;
+    const data = teamData[member];
+    
+    document.getElementById("modal-image").src = data.image;
+    document.getElementById("modal-image").alt = data.name;
+    document.getElementById("modal-name").textContent = data.name;
+    document.getElementById("modal-position").textContent = data.position;
+    document.getElementById("modal-email").textContent = data.email;
+    document.getElementById("modal-phone").textContent = data.phone;
+    document.getElementById("modal-linkedin").href = data.linkedin;
+    document.getElementById("modal-description").textContent = data.description;
+    
+    modal.style.display = "block";
+    void modal.offsetWidth;
+    modal.classList.add("show");
+  });
+});
+
+closeBtn.onclick = () => {
+  modal.classList.remove("show");
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 300); // Wait for transition to finish
+};
+
+window.onclick = (event) => {
+  if (event.target == modal) {
+    modal.classList.remove("show");
+    setTimeout(() => {
+      modal.style.display = "none";
+    }, 300); // Wait for transition to finish
+  }
+};
