@@ -1,0 +1,939 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root  {
+    --main-color: #c78a3b;
+    --background-white: #f5f5f5;
+    --text-color: #252525;
+    --secondary-color-dark: #303030;
+    --secondary-color: #251605;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-white);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* Navbar Styles */
+
+.top-nav {
+    background-color: var(--main-color);
+    height: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--background-white);
+    border-bottom: 1px solid lightgrey;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo-container {
+    width: 300px;
+}
+
+.img-logo {
+    width: 100%;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-menu ul li {
+    margin-left: 1.4rem;
+}
+
+.nav-menu ul li a {
+    color: var(--text-color);
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    letter-spacing: .5px;
+}
+
+.nav-menu ul li a:hover {
+    color: var(--main-color);
+}
+
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--text-color);
+}
+
+@media screen and (max-width: 1040px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 7rem;
+        flex-direction: column;
+        background-color: var(--background-white);
+        width: 100%;
+        text-align: center;
+        transition: 0.6s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+    }
+
+    .nav-menu ul li {
+        margin: 1rem 0;
+        height: 5vh;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 1001;
+    }
+}
+
+
+
+
+/* Hero Section Styles */
+.portada-container {
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-portada {
+    width: 100vw;
+}
+
+.texto-portada {
+    position: absolute;
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 4px black;
+    text-shadow: none;
+    font-family: "Playfair Display";
+    background-color: rgba(0, 0, 0, 0.507);
+    padding: 10px 30px;
+    border-radius: 8px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .texto-portada {
+        font-size: 26px;
+        font-size: 2.5rem;
+        width: 80vw;
+        background-color: rgba(0, 0, 0, 0.507);
+
+    }
+
+    .logo-container {
+        width: 60%;
+    }
+
+    .navbar {
+        padding: 16px 32px 16px 8px;
+    }
+}
+
+
+
+
+/* ASESORATE Call to Action Section Styles */
+.asesorate-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    color: whitesmoke;
+    padding: 60px 50px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+  .asesorate-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .asesorate-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .asesorate-container p {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+
+
+.btn-contacto {
+    display: inline-block;
+    background-color: white;
+    color: var(--main-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .btn-contacto:hover {
+    background-color: var(--secondary-color-dark);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+
+
+
+  
+  @media screen and (max-width: 768px) {
+    .asesorate-container h2 {
+        font-size: 2rem;
+    }
+  
+    .asesorate-container p {
+        font-size: 1rem;
+    }
+  
+    .btn-contacto {
+        font-size: 1rem;
+        padding: 10px 24px;
+    }
+  }
+
+
+
+/* Areas of Practice Styles */
+.areas-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 40px 0;
+    width: 50vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: justify;
+}
+
+.area-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    line-height: 2rem;
+}
+
+.area-card:hover {
+    transform: translateY(-5px);
+}
+
+.area-card-text {
+    padding: 20px 30px;
+}
+
+.area-card h3 {
+    color: var(--main-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.area-card ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.area-card li {
+    margin-bottom: 8px;
+}
+
+.arbitraje {
+    grid-column: span 2;
+}
+
+.text-link {
+    color: grey;
+    font-weight: 700; 
+    font-size: 1.3rem;
+}
+
+.text-link:hover {
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .areas-container {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .arbitraje {
+        grid-column: span 1;
+    }
+
+    .area-card {
+        width: 100%;
+    }
+}
+
+
+
+
+/* Team Section Styles */
+.team-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.team-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-intro h2 {
+    color: var(--main-color);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.team-intro p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.team-card {
+    perspective: 1000px;
+    height: 400px;
+}
+
+.team-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.team-card:hover .team-card-inner {
+    transform: rotateY(180deg);
+}
+
+.team-card-front, .team-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.team-card-front {
+    background-color: white;
+}
+
+.team-card-back {
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
+.team-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.team-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.linkedin-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.linkedin-link:hover {
+    opacity: 0.8;
+}
+
+.linkedin-icon {
+    height: 24px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .team-intro h2 {
+        font-size: 2rem;
+    }
+
+    .team-card {
+        height: 350px;
+    }
+}
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: var(--secondary-color-dark);
+    color: #f5f5f5;
+    padding: 3rem 10% 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-img-logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.footer-links, .footer-contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer h4 {
+    color: var(--main-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a, .footer-contact p {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: var(--main-color);
+}
+
+.footer-contact p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #a0a0a0;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-logo, .footer-links, .footer-contact {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+/* Contact Page Styles */
+.contact-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contact-info-container {
+    background-color: var(--background-white);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.map-container {
+    background-color: var(--background-white);
+    /* border-radius: 8px; */
+    /* padding: 30px; */
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+
+.map {
+    width: 100%;
+    height: 450px;
+}
+
+.contact-info-container h2, .map-container h2 {
+    color: var(--main-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.contact-card {
+    flex-basis: calc(33.333% - 20px);
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    color: var(--main-color);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.contact-card a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: var(--main-color);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .contact-card {
+        flex-basis: 100%;
+    }
+    
+    .map {
+        height: 300px;
+    }
+}
+
+
+
+
+/* About Us Page Styles */
+.estudio-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.estudio-container p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.estudio-container strong {
+    color: var(--main-color);
+}
+
+.estudio-highlight {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--main-color);
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    border-top: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+.estudio-timeline {
+    position: relative;
+    padding-left: 30px;
+    margin: 40px 0;
+}
+
+.estudio-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--main-color);
+}
+
+.estudio-timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.estudio-timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -34px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+@media screen and (max-width: 768px) {
+    .estudio-container p {
+        font-size: 1rem;
+    }
+    .estudio-highlight {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+/* Arbitration and Partition Page Styles */
+.arbitraje-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.arbitraje-container h1 {
+    color: var(--main-color);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.arbitraje-container p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.arbitraje-container strong {
+    color: var(--main-color);
+}
+
+.arbitraje-highlight {
+    background-color: #f0f0f0;
+    border-left: 4px solid var(--main-color);
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.arbitraje-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.arbitraje-cta a {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.arbitraje-cta a:hover {
+    background-color: #8d5f25;
+}
+
+@media screen and (max-width: 768px) {
+    .arbitraje-container h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+/* Home Page Specific Styles */
+.hero-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    /* font-size: 6rem; */
+    font-size: 5vw;
+    text-shadow: 2px 2px 10px black;
+    font-family: "Playfair display";
+    letter-spacing: 8px;
+    font-weight: 500;
+    width: 80vw;
+}
+
+/* .hero-content p {
+    font-size: 1.2rem;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+} */
+
+/* .hero-cta {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+} */
+
+/* .hero-cta:hover {
+    background-color: #8d5f25;
+} */
+
+.featured-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 20px;
+    gap: 2rem;
+}
+
+.featured-item {
+    flex-basis: calc(50% - 40px);
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.featured-item h2 {
+    color: var(--main-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.featured-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.featured-link {
+    color: var(--secondary-color-dark);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.featured-link:hover {
+    color: #8d5f25;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .featured-item {
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+/* Contact Form Styles */
+.contact-form-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: var(--background-white);
+    border-radius: 8px;
+}
+
+.contact-form-container h1 {
+    color: var(--main-color);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--secondary-color-dark);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #8d5f25;
+}
+
+.message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form-container {
+        padding: 20px;
+    }
+}

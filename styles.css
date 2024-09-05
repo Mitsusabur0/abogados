@@ -349,23 +349,17 @@ body {
     border-radius: inherit;
 }
 
-.linkedin-text-link {
-  color: var(--secondary-color-dark);
-  height: 1.2rem;
-  margin: auto;
-}
-
-.linkedin-img {
+/* .linkedin-img {
   width: fit-content;
   margin-top: 10px;
-}
+} */
 
-.main-color {
+/* .main-color {
     color: var(--main-color)
-}
-.main-color-bg {
+} */
+/* .main-color-bg {
     background-color: var(--main-color)
-}
+} */
 
 
 
