@@ -159,12 +159,12 @@ a {
     position: absolute;
     color: white;
     font-size: 4.5rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 4px;
     text-shadow: 1px 1px 4px black;
-    text-shadow: none;
+    /* text-shadow: none; */
     font-family: "Playfair Display";
-    background-color: rgba(0, 0, 0, 0.507);
+    /* background-color: rgba(0, 0, 0, 0.507); */
     padding: 10px 30px;
     border-radius: 8px;
 }
@@ -172,10 +172,9 @@ a {
 
 @media screen and (max-width: 768px) {
     .texto-portada {
-        font-size: 26px;
-        font-size: 2.5rem;
+        font-size: 3rem;
         /* font-size: 4vw; */
-        background-color: rgba(0, 0, 0, 0.507);
+        /* background-color: rgba(0, 0, 0, 0.507); */
         margin: 0 40px;
     }
 
@@ -195,7 +194,7 @@ a {
 
 @media screen and (max-width: 480px) {
     .texto-portada {
-        font-size: 8vw;
+        font-size: 2.2rem;
     }
 }
 
@@ -1121,9 +1120,9 @@ body.modal-open {
 
 @media screen and (max-width: 480px) {
     .hero-content h1 {
-        font-size: 8vw;
+        font-size: 2.2rem;
         /* Even larger for very small screens */
-        letter-spacing: 0.2vw;
+        letter-spacing: 4px;
         /* Further reduced letter spacing */
         white-space: normal;
         /* Allows wrapping on very small screens */
