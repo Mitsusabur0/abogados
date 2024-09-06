@@ -47,7 +47,11 @@
 
     <main>
         <div class="portada-container">
-            <img src="../images/view1.png" alt="portada" class="img-portada">
+            <picture>
+                <source media="(max-width: 600px)" srcset="../images/portadas/contacto_portada.png">
+                <source media="(min-width: 601px)" srcset="../images/portadas/contacto_portada.png">
+                <img src="../images/portadas/contacto_portada.png" alt="Header Image" class="img-portada">
+            </picture>
             <h1 class="texto-portada ">Contacto</h1>
         </div>
         

@@ -46,7 +46,12 @@
 
     <main>
         <div class="portada-container">
-            <img src="../images/nuestro_estudio.jpg" alt="portada" class="img-portada">
+            <!-- <img src="../images/nuestro_estudio.jpg" alt="portada" class="img-portada"> -->
+            <picture>
+                <source media="(max-width: 600px)" srcset="../images/portadas/estudio_portada_mobile.jpg">
+                <source media="(min-width: 601px)" srcset="../images/portadas/estudio_portada.jpg">
+                <img src="../images/portadas/estudio_portada.jpg" alt="Header Image" class="img-portada">
+            </picture>
             <h1 class="texto-portada ">Nuestro Estudio</h1>
         </div>
         

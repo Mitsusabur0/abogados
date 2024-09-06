@@ -53,11 +53,14 @@
 
     <main>
         <div class="portada-container">
-            <img src="../images/areas-portada.JPG" alt="portada" class="img-portada">
+            <!-- <img src="../images/areas-portada.JPG" alt="portada" class="img-portada"> -->
+            <picture>
+              <source media="(max-width: 600px)" srcset="../images/portadas/areas_portada_mobile_big.jpg">
+              <source media="(min-width: 601px)" srcset="../images/portadas/areas_portada.jpg">
+              <img src="../images/portadas/areas_portada.jpg" alt="Header Image" class="img-portada">
+            </picture>
             <h1 class="texto-portada ">Áreas de Práctica</h1>
         </div>
-
-
 
 
     <div class="areas-container">

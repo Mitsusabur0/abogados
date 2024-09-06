@@ -148,6 +148,9 @@ a {
 
 .img-portada {
     width: 100vw;
+    /* NEW CODE TO REVIEW */
+    height: auto;
+    object-fit: cover;
 }
 
 .texto-portada {
