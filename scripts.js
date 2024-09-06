@@ -145,8 +145,8 @@ const teamData = {
     email: "bbarrueto@abarcazanartu.cl",
     phone: "+56 9 6247 3575",
     linkedin: "https://www.linkedin.com/in/bianca-barrueto-zamora-985484ab/",
-    description: "",
-    image: "../images/bianca.jpeg"
+    description: "Bianca Isa Barrueto Zamora abogada Universidad Central de Chile (2010). Mediadora Familiar, Universidad Católica de Chile. Abogada, con más de 12 años de experiencia en el ámbito público y privado. Cofundadora y Abogada corporativa de Bike Santiago, proyecto desarrollado por Banco Itaú, Empresa Trek (Waterloo USA) y distintas municipalidades de la ciudad de Santiago (2012-2017). Funcionaria Pública, de la Municipalidad de Lo Barnechea y San Miguel, desempeñándose como abogada en Secretaría Municipal y Dirección Jurídica (2017-2020). Bianca se unió al equipo de Abarca Zañartu como Abogada Asociada en agosto de 2024.",
+    image: "../images/bianca.jpeg",
   }
 };
 
