@@ -1225,3 +1225,8 @@ body.modal-open {
     text-decoration: none;
     color: var(--background-white)
 }
+
+.footer-contact a  {
+    text-decoration: none;
+    color: var(--background-white);
+}
