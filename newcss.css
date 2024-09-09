@@ -1219,3 +1219,9 @@ body.modal-open {
         padding: 20px;
     }
 }
+
+
+.footer-phone {
+    text-decoration: none;
+    color: var(--background-white)
+}
